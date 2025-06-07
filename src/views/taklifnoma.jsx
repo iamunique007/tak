@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom';
 
 export default function Taklifnoma() {
-    const { name } = useParams(); 
+    const { name } = useParams();
+    const cleanedName = name?.replaceAll("_", " ") || '';
   
     return (
       <div className='w-screen h-screen overflow-auto grid items-center justify-center bg-gray-200'>
@@ -12,7 +13,7 @@ export default function Taklifnoma() {
                 <div className='pl-[24px] flex gap-4'>
                     <span className='font-bold'>Hurmatli!</span>  
                     <div className='border-b grow-1 text-center'>
-                        <em className='tracking-widest'>{ name.replaceAll("_", " ") }</em>
+                        <em className='tracking-widest'>{ cleanedName }</em>
                     </div>
                 </div>
 
