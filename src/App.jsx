@@ -8,9 +8,8 @@ function App() {
         Ishladi
       </div>
         <Routes>
-          <Route path='/' element={ <Navigate to="user/Anvar"/> } />
-          <Route path='/user/:name' element={ <Taklifnoma /> } />
-          <Route path='*' element={ <div> Not Found Page </div> } />
+          <Route path='/not' element={ <div> Not Found Page </div> } />
+          <Route path='/notfount' element={ <div> Not Found Page 1 </div> } />
         </Routes>
       </>
   )
