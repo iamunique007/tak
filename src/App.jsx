@@ -6,8 +6,7 @@ function App() {
       <Routes>
         <Route path='/' element={ <Navigate to="user/Anvar"/> } />
         <Route path='/user/:name' element={ <Taklifnoma /> } />
-        <Route path='/user' element={ <div>Ishladi</div> } />
-        <Route path='*' element={ <div> Not Found Page</div> } />
+        <Route path='*' element={ <div> Not Found Page </div> } />
       </Routes>
   )
 }
