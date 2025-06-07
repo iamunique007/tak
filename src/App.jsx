@@ -4,8 +4,10 @@ import Taklifnoma from './views/taklifnoma'
 function App() {
   return (
       <Routes>
-        <Route path='/kim' element={<div> Ishladi </div>}/>
-        <Route path='/:name' element={ <Taklifnoma /> }></Route>
+        <Route path='/' element={ <Navigator to="/Anvar"/> } />
+        <Route path='/user/:name' element={ <Taklifnoma /> } />
+        <Route path='/user' element={ <div>Ishladi</div> } />
+        <Route path='*' element={ <div> Not Found Page</div> } />
       </Routes>
   )
 }

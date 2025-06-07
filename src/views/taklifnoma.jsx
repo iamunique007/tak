@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 
 export default function Taklifnoma() {
-    const { name } = useParams();
+    const { name } = useParams(); 
   
     return (
       <div className='w-screen h-screen overflow-auto grid items-center justify-center bg-gray-200'>
